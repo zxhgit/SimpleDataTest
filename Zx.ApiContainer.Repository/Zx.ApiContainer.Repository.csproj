@@ -40,7 +40,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DBAdapters\ApiDataAdapter.cs" />
+    <Compile Include="DBAdapters\BasicDBAdapter.cs" />
+    <Compile Include="DBAdapters\ConfigrationDataAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zx.ApiContainer.Entity\Zx.ApiContainer.Entity.csproj">
+      <Project>{3431793b-e2c3-47d7-85cd-996554ae50df}</Project>
+      <Name>Zx.ApiContainer.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Services\Zx.ApiContainer.Services.csproj">
+      <Project>{d6524804-ab9f-475a-8f83-c25f180663a9}</Project>
+      <Name>Zx.ApiContainer.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Utilities\Zx.ApiContainer.Utilities.csproj">
+      <Project>{aa605794-e87e-4377-9659-9acb8587acc7}</Project>
+      <Name>Zx.ApiContainer.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Wrappers\Zx.ApiContainer.Wrappers.csproj">
+      <Project>{793e8a9b-6ede-491d-95cb-6d601471c2c0}</Project>
+      <Name>Zx.ApiContainer.Wrappers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
