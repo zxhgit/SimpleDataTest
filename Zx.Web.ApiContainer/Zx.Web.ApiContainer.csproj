@@ -60,6 +60,41 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthModule.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="core\DefaultModelBinder.cs" />
+    <Compile Include="core\DictionaryValueProvider.cs" />
+    <Compile Include="core\IValueProvider.cs" />
+    <Compile Include="core\MethodDescriptor.cs" />
+    <Compile Include="core\MethodInvoker.cs" />
+    <Compile Include="core\ModelBindingContext.cs" />
+    <Compile Include="core\ParameterDescriptor.cs" />
+    <Compile Include="core\PrefixContainer.cs" />
+    <Compile Include="core\ServiceDescriptor.cs" />
+    <Compile Include="core\ValueProviderCollection.cs" />
+    <Compile Include="core\ValueProviderFactory.cs" />
+    <Compile Include="core\ValueProviderResult.cs" />
+    <Compile Include="EntryModule.cs" />
+    <Compile Include="ErrorHandler\CustomErrorHandler.cs" />
+    <Compile Include="ErrorHandler\HttpServiceErrorUtilities.cs" />
+    <Compile Include="ErrorHandler\ServiceErrorException.cs" />
+    <Compile Include="external\CustomStatusCodeHandler.cs" />
+    <Compile Include="external\JsonDotNetJsonSerializer.cs" />
+    <Compile Include="external\TypeHelpers.cs" />
+    <Compile Include="framework\AuthService.cs" />
+    <Compile Include="framework\ExceptionLogService.cs" />
+    <Compile Include="framework\IExceptionLogService.cs" />
+    <Compile Include="framework\IInitService.cs" />
+    <Compile Include="framework\InitService.cs" />
+    <Compile Include="framework\InitServiceByDB.cs" />
+    <Compile Include="framework\InitServiceByDll.cs" />
+    <Compile Include="model\ApiResult.cs" />
+    <Compile Include="model\AuthUserIdentity.cs" />
+    <Compile Include="model\Enum\ServiceErrorCodeEnum.cs" />
+    <Compile Include="model\HttpServiceError.cs" />
+    <Compile Include="model\RouteMapping.cs" />
+    <Compile Include="model\ServiceError.cs" />
+    <Compile Include="model\TaxonomyCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +118,29 @@
       <Project>{34576216-0dca-4b0f-a0dc-9075e75a676f}</Project>
       <Name>Nancy</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Entity\Zx.ApiContainer.Entity.csproj">
+      <Project>{3431793b-e2c3-47d7-85cd-996554ae50df}</Project>
+      <Name>Zx.ApiContainer.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Repository\Zx.ApiContainer.Repository.csproj">
+      <Project>{b8f3d08a-40c0-4ba2-9837-b2492fd9c86f}</Project>
+      <Name>Zx.ApiContainer.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Services\Zx.ApiContainer.Services.csproj">
+      <Project>{d6524804-ab9f-475a-8f83-c25f180663a9}</Project>
+      <Name>Zx.ApiContainer.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Utilities\Zx.ApiContainer.Utilities.csproj">
+      <Project>{aa605794-e87e-4377-9659-9acb8587acc7}</Project>
+      <Name>Zx.ApiContainer.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiContainer.Wrappers\Zx.ApiContainer.Wrappers.csproj">
+      <Project>{793e8a9b-6ede-491d-95cb-6d601471c2c0}</Project>
+      <Name>Zx.ApiContainer.Wrappers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="apilib\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
