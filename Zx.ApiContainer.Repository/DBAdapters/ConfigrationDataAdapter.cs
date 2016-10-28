@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Zx.ApiContainer.Services.DataAdapters;
+using Zx.ApiContainer.Utilities.Data;
 
 namespace Zx.ApiContainer.Repository.DBAdapters
 {

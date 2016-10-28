@@ -1,7 +1,7 @@
 ﻿using System.Messaging;
 using System.Runtime.Serialization.Formatters;
 
-namespace ZhaoPin.HighEnd.ApiContainer.Utilities
+namespace Zx.ApiContainer.Utilities
 {
     /// <summary>
     /// 消息队列处理帮助类

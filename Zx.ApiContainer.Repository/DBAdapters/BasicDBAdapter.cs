@@ -7,10 +7,10 @@ using System.Text;
 using Zx.ApiContainer.Entity;
 using Zx.ApiContainer.Entity.Attributes;
 using Zx.ApiContainer.Entity.Configration;
-//using ZhaoPin.HighEnd.ApiContainer.Services.DataAdapters;
-//using ZhaoPin.HighEnd.ApiContainer.Utilities;
-//using ZhaoPin.HighEnd.ApiContainer.Utilities.Data;
-//using ZhaoPin.HighEnd.ApiContainer.Wrappers.Cache;
+using Zx.ApiContainer.Services.DataAdapters;
+using Zx.ApiContainer.Utilities;
+using Zx.ApiContainer.Utilities.Data;
+using Zx.ApiContainer.Wrappers.Cache;
 
 namespace Zx.ApiContainer.Repository.DBAdapters
 {
