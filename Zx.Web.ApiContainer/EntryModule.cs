@@ -19,7 +19,7 @@ namespace Zx.Web.ApiContainer
 {
     public class EntryModule : NancyModule
     {
-        internal static readonly string LibPath = HttpContext.Current.Server.MapPath("/") + "/apilib/";
+        internal static readonly string LibPath = HttpContext.Current.Server.MapPath("/") + "/apilib/";//lib文件目录可以由siteid获得——表ApiContainerSiteConfig
         private static readonly Dictionary<Tuple<string, string>, MethodDescriptor> MethodContainer =
             new Dictionary<Tuple<string, string>, MethodDescriptor>();
 

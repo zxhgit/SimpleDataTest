@@ -13,8 +13,8 @@ namespace Zx.Web.ApiContainer.framework
     public class ExceptionLogService : IExceptionLogService
     {
         //private static readonly string LibPath = HttpContext.Current.Server.MapPath("/") + "/corelib/";
-        private const string ServiceAssembley = "ZhaoPin.HighEnd.Wrappers.dll";
-        private const string ServiceName = "ZhaoPin.HighEnd.Wrappers.LogHelper";
+        private const string ServiceAssembley = "Zx.Wrappers.dll";
+        private const string ServiceName = "Zx.Wrappers.LogHelper";
         private const string MethodName = "LogException";
 
         private static MethodInfo _methodInfoCache;
@@ -69,7 +69,8 @@ namespace Zx.Web.ApiContainer.framework
 
         public void LogError(Exception ex)
         {
-            LogHelper.LogException(ex);
+            //暂时不记日志
+            //LogHelper.LogException(ex);
         }
     }
 }

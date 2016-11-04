@@ -21,7 +21,6 @@ namespace Zx.ApiContainer.Services
         /// <param name="ex"></param>
         public void SendExceptionLog(Exception ex)
         {
-            //string fullPath = "ZhaoPin.HighEnd.TaskSystem.ApiExceptionMessageProcessor.ApiExceptionMessageProcessor,ZhaoPin.HighEnd.TaskSystem";
             string fullPath = "Zx.TaskSystem.ApiExceptionMessageProcessor.ApiExceptionMessageProcessor,Zx.TaskSystem";
 
             IConfigrationService configService = ServiceFactory.GetService<IConfigrationService>() as IConfigrationService;

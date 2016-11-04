@@ -8,15 +8,11 @@ using Zx.ApiContainer.Services.DataAdapters;
 namespace Zx.ApiContainer.Repository.DBAdapters
 {
     public class ApiDataAdapter : BasicDBAdapter, IApiDataAdapter
-    {
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        //private const string DB_KEY = "ZhaoPin.HighEnd.ConfigDB";
+    {             
         /// <summary>
         /// 当前DataAdapter使用的数据库
         /// </summary>
-        const string DB_KEY = "ZhaoPin.HighEnd.AdminDB";
+        const string DB_KEY = "Zx.ApiContainer";
 
         /// <summary>
         /// 初始化

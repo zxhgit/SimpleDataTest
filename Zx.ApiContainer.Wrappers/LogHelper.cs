@@ -16,8 +16,7 @@ namespace Zx.ApiContainer.Wrappers
         {
             if (ConfigrationHelper.GlobalEnableAsync)
             {
-                //string handler = "ZhaoPin.HighEnd.Wrappers.DBLogExceptionHandler,ZhaoPin.HighEnd.Wrappers";
-                string handler = "ZhaoPin.HighEnd.ApiContainer.Wrappers.DBLogExceptionHandler,ZhaoPin.HighEnd.ApiContainer.Wrappers";
+                string handler = "Zx.ApiContainer.Wrappers.DBLogExceptionHandler,Zx.ApiContainer.Wrappers";
 
                 IExceptionHandler processor = ExceptionHandlerFactory.GetCurrentExceptionHandler(handler);
 
