@@ -169,9 +169,62 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ApiContainer\ClassMethodModel.cs" />
+    <Compile Include="Models\ApiContainer\ClientMappingModel.cs" />
+    <Compile Include="Models\ApiContainer\UploadFileResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\.idea\encodings.xml" />
+    <Content Include="Content\.idea\misc.xml" />
+    <Content Include="Content\.idea\modules.xml" />
+    <Content Include="Content\.idea\scopes\scope_settings.xml" />
+    <Content Include="Content\.idea\vcs.xml" />
+    <Content Include="Content\.idea\workspace.xml" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\dist\js\npm.js" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\Gruntfile.js" />
+    <Content Include="Content\bootstrap\js\affix.js" />
+    <Content Include="Content\bootstrap\js\alert.js" />
+    <Content Include="Content\bootstrap\js\button.js" />
+    <Content Include="Content\bootstrap\js\carousel.js" />
+    <Content Include="Content\bootstrap\js\collapse.js" />
+    <Content Include="Content\bootstrap\js\dropdown.js" />
+    <Content Include="Content\bootstrap\js\modal.js" />
+    <Content Include="Content\bootstrap\js\popover.js" />
+    <Content Include="Content\bootstrap\js\scrollspy.js" />
+    <Content Include="Content\bootstrap\js\tab.js" />
+    <Content Include="Content\bootstrap\js\tooltip.js" />
+    <Content Include="Content\bootstrap\js\transition.js" />
+    <Content Include="Content\css\dashboard.css" />
+    <Content Include="Content\css\login.css" />
+    <Content Include="Content\html\add.html" />
+    <Content Include="Content\html\list.html" />
+    <Content Include="Content\html\login.html" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\delete.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\doc.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\docx.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\done.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\excel.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\media.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\music.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\pdf.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\start.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\stop.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\txt.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\unknown.png" />
+    <Content Include="Content\JSAjaxFileUploader\img\icons\xml.png" />
+    <Content Include="Content\JSAjaxFileUploader\JQuery.JSAjaxFileUploader.css" />
+    <Content Include="Content\js\html5shiv.min.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\respond.min.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -228,18 +281,110 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\.idea\.name" />
+    <Content Include="Content\.idea\API_bootstrap.iml" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap\less\alerts.less" />
+    <Content Include="Content\bootstrap\less\badges.less" />
+    <Content Include="Content\bootstrap\less\bootstrap.less" />
+    <Content Include="Content\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Content\bootstrap\less\button-groups.less" />
+    <Content Include="Content\bootstrap\less\buttons.less" />
+    <Content Include="Content\bootstrap\less\carousel.less" />
+    <Content Include="Content\bootstrap\less\close.less" />
+    <Content Include="Content\bootstrap\less\code.less" />
+    <Content Include="Content\bootstrap\less\component-animations.less" />
+    <Content Include="Content\bootstrap\less\dropdowns.less" />
+    <Content Include="Content\bootstrap\less\forms.less" />
+    <Content Include="Content\bootstrap\less\glyphicons.less" />
+    <Content Include="Content\bootstrap\less\grid.less" />
+    <Content Include="Content\bootstrap\less\input-groups.less" />
+    <Content Include="Content\bootstrap\less\jumbotron.less" />
+    <Content Include="Content\bootstrap\less\labels.less" />
+    <Content Include="Content\bootstrap\less\list-group.less" />
+    <Content Include="Content\bootstrap\less\media.less" />
+    <Content Include="Content\bootstrap\less\mixins.less" />
+    <Content Include="Content\bootstrap\less\mixins\alerts.less" />
+    <Content Include="Content\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="Content\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="Content\bootstrap\less\mixins\buttons.less" />
+    <Content Include="Content\bootstrap\less\mixins\center-block.less" />
+    <Content Include="Content\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="Content\bootstrap\less\mixins\forms.less" />
+    <Content Include="Content\bootstrap\less\mixins\gradients.less" />
+    <Content Include="Content\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="Content\bootstrap\less\mixins\grid.less" />
+    <Content Include="Content\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="Content\bootstrap\less\mixins\image.less" />
+    <Content Include="Content\bootstrap\less\mixins\labels.less" />
+    <Content Include="Content\bootstrap\less\mixins\list-group.less" />
+    <Content Include="Content\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="Content\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="Content\bootstrap\less\mixins\opacity.less" />
+    <Content Include="Content\bootstrap\less\mixins\pagination.less" />
+    <Content Include="Content\bootstrap\less\mixins\panels.less" />
+    <Content Include="Content\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="Content\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="Content\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="Content\bootstrap\less\mixins\resize.less" />
+    <Content Include="Content\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="Content\bootstrap\less\mixins\size.less" />
+    <Content Include="Content\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="Content\bootstrap\less\mixins\table-row.less" />
+    <Content Include="Content\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="Content\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="Content\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="Content\bootstrap\less\modals.less" />
+    <Content Include="Content\bootstrap\less\navbar.less" />
+    <Content Include="Content\bootstrap\less\navs.less" />
+    <Content Include="Content\bootstrap\less\normalize.less" />
+    <Content Include="Content\bootstrap\less\pager.less" />
+    <Content Include="Content\bootstrap\less\pagination.less" />
+    <Content Include="Content\bootstrap\less\panels.less" />
+    <Content Include="Content\bootstrap\less\popovers.less" />
+    <Content Include="Content\bootstrap\less\print.less" />
+    <Content Include="Content\bootstrap\less\progress-bars.less" />
+    <Content Include="Content\bootstrap\less\responsive-embed.less" />
+    <Content Include="Content\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Content\bootstrap\less\scaffolding.less" />
+    <Content Include="Content\bootstrap\less\tables.less" />
+    <Content Include="Content\bootstrap\less\theme.less" />
+    <Content Include="Content\bootstrap\less\thumbnails.less" />
+    <Content Include="Content\bootstrap\less\tooltip.less" />
+    <Content Include="Content\bootstrap\less\type.less" />
+    <Content Include="Content\bootstrap\less\utilities.less" />
+    <Content Include="Content\bootstrap\less\variables.less" />
+    <Content Include="Content\bootstrap\less\wells.less" />
+    <Content Include="Content\bootstrap\LICENSE" />
+    <Content Include="Content\bootstrap\npm-debug.log" />
+    <Content Include="Content\bootstrap\package.json" />
+    <Content Include="Content\bootstrap\README.md" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.tmpl.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\JSAjaxFileUploader\JQuery.JSAjaxFileUploader.js" />
+    <Content Include="Scripts\JSAjaxFileUploader\JQuery.JSAjaxFileUploader.min.js" />
+    <Content Include="Scripts\JSAjaxFileUploader\JQuery.JSAjaxFileUploaderMultiple.js" />
+    <Content Include="Scripts\JSAjaxFileUploader\JQuery.JSAjaxFileUploaderSingle.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
@@ -282,12 +427,41 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_LayoutMenu.cshtml" />
+    <Content Include="Views\ApiContainer\Overview.cshtml" />
+    <Content Include="Views\ApiContainer\Rollback.cshtml" />
+    <Content Include="Views\ApiContainer\UploadDll.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Backup\" />
+    <Folder Include="Content\img\" />
+    <Folder Include="TmpLib\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zx.ApiAdmin.Entity\Zx.ApiAdmin.Entity.csproj">
+      <Project>{24581d4a-0985-46e5-88e2-3386f2c206cc}</Project>
+      <Name>Zx.ApiAdmin.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiAdmin.Repository\Zx.ApiAdmin.Repository.csproj">
+      <Project>{44b114c4-0b11-4d30-b1dd-79786ebe0c67}</Project>
+      <Name>Zx.ApiAdmin.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiAdmin.Services\Zx.ApiAdmin.Services.csproj">
+      <Project>{b1095084-ae79-497f-a93f-c41e52e5b4d2}</Project>
+      <Name>Zx.ApiAdmin.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiAdmin.Utilities\Zx.ApiAdmin.Utilities.csproj">
+      <Project>{e0b170f3-1bd7-497a-8aac-57bfdaef7f67}</Project>
+      <Name>Zx.ApiAdmin.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zx.ApiAdmin.Wrappers\Zx.ApiAdmin.Wrappers.csproj">
+      <Project>{07d4273b-8adf-41e2-bd0b-f37ceb9e35d2}</Project>
+      <Name>Zx.ApiAdmin.Wrappers</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
