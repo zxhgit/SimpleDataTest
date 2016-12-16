@@ -13,7 +13,7 @@ namespace Zx.ApiAdmin.Repository.DBAdapters
         /// <summary>
         /// 
         /// </summary>
-        const string DB_KEY = "ZhaoPin.HighEnd.ConfigDB";
+        const string DB_KEY = "Zx.ConfigDB";
 
         /// <summary>
         /// 初始化

@@ -17,7 +17,6 @@ namespace Zx.ApiContainer.Utilities.Data
         /// <summary>
         /// 配置库DBkey
         /// </summary>
-        //const string CONFIG_DBKEY = "ZhaoPin.HighEnd.ConfigDB";
         const string CONFIG_DBKEY = "Zx.ConfigDB";
 
         /// <summary>

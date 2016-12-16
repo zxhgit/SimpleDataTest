@@ -12,5 +12,10 @@ namespace ClassTest
         {
             return parm1 ?? "null";
         }
+
+        public string Method2(string parm1)
+        {
+            return parm1 ?? "null";
+        }
     }
 }
