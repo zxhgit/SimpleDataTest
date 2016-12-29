@@ -15,7 +15,7 @@ namespace SimpleDataDemo
                         var openDbDemo = new OpenDatabaseSamples();
                         openDbDemo.RunAll();
                         break;
-                    case "2":
+                    case "2"://test
                         var allMethodDemo = new AllMethodSamples();
                         allMethodDemo.RunAll();
                         break;
