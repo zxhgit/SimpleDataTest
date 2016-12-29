@@ -1,0 +1,12 @@
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\SimpleDataDemo.exe.config
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\SimpleDataDemo.exe
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\SimpleDataDemo.pdb
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.Ado.dll
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.dll
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.SqlServer.dll
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.Ado.pdb
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.SqlServer.pdb
+E:\mycode\SDTest\SimpleDataDemo\bin\Release\Simple.Data.pdb
+E:\mycode\SDTest\SimpleDataDemo\obj\Release\SimpleDataDemo.csprojResolveAssemblyReference.cache
+E:\mycode\SDTest\SimpleDataDemo\obj\Release\SimpleDataDemo.exe
+E:\mycode\SDTest\SimpleDataDemo\obj\Release\SimpleDataDemo.pdb

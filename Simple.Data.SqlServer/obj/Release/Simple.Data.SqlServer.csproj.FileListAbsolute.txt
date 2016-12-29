@@ -1,0 +1,11 @@
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.SqlServer.dll
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.SqlServer.pdb
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.Ado.dll
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.Ado.pdb
+E:\mycode\SDTest\Simple.Data.SqlServer\bin\Release\Simple.Data.pdb
+E:\mycode\SDTest\Simple.Data.SqlServer\obj\Release\Simple.Data.SqlServer.csprojResolveAssemblyReference.cache
+E:\mycode\SDTest\Simple.Data.SqlServer\obj\Release\Simple.Data.SqlServer.Properties.Resources.resources
+E:\mycode\SDTest\Simple.Data.SqlServer\obj\Release\Simple.Data.SqlServer.csproj.GenerateResource.Cache
+E:\mycode\SDTest\Simple.Data.SqlServer\obj\Release\Simple.Data.SqlServer.dll
+E:\mycode\SDTest\Simple.Data.SqlServer\obj\Release\Simple.Data.SqlServer.pdb

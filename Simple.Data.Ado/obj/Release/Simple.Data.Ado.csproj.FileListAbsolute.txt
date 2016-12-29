@@ -1,0 +1,8 @@
+E:\mycode\SDTest\Simple.Data.Ado\bin\Release\Simple.Data.Ado.dll.config
+E:\mycode\SDTest\Simple.Data.Ado\bin\Release\Simple.Data.Ado.dll
+E:\mycode\SDTest\Simple.Data.Ado\bin\Release\Simple.Data.Ado.pdb
+E:\mycode\SDTest\Simple.Data.Ado\bin\Release\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data.Ado\bin\Release\Simple.Data.pdb
+E:\mycode\SDTest\Simple.Data.Ado\obj\Release\Simple.Data.Ado.csprojResolveAssemblyReference.cache
+E:\mycode\SDTest\Simple.Data.Ado\obj\Release\Simple.Data.Ado.dll
+E:\mycode\SDTest\Simple.Data.Ado\obj\Release\Simple.Data.Ado.pdb

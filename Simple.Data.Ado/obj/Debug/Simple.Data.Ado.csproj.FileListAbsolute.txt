@@ -1,0 +1,16 @@
+E:\mycode\SDTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.csprojResolveAssemblyReference.cache
+E:\mycode\SDTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.dll.config
+E:\mycode\SDTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.dll
+E:\mycode\SDTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.pdb
+E:\mycode\SDTest\Simple.Data.Ado\bin\Debug\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data.Ado\bin\Debug\Simple.Data.pdb
+E:\mycode\SDTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.dll
+E:\mycode\SDTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.pdb
+E:\mycode\SimpleDataTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.dll.config
+E:\mycode\SimpleDataTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.dll
+E:\mycode\SimpleDataTest\Simple.Data.Ado\bin\Debug\Simple.Data.Ado.pdb
+E:\mycode\SimpleDataTest\Simple.Data.Ado\bin\Debug\Simple.Data.dll
+E:\mycode\SimpleDataTest\Simple.Data.Ado\bin\Debug\Simple.Data.pdb
+E:\mycode\SimpleDataTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.csprojResolveAssemblyReference.cache
+E:\mycode\SimpleDataTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.dll
+E:\mycode\SimpleDataTest\Simple.Data.Ado\obj\Debug\Simple.Data.Ado.pdb

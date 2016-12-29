@@ -1,0 +1,11 @@
+E:\mycode\SDTest\Simple.Data\bin\Debug\Simple.Data.dll.config
+E:\mycode\SDTest\Simple.Data\bin\Debug\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data\bin\Debug\Simple.Data.pdb
+E:\mycode\SDTest\Simple.Data\obj\Debug\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data\obj\Debug\Simple.Data.pdb
+E:\mycode\SimpleDataTest\Simple.Data\bin\Debug\Simple.Data.dll.config
+E:\mycode\SimpleDataTest\Simple.Data\bin\Debug\Simple.Data.dll
+E:\mycode\SimpleDataTest\Simple.Data\bin\Debug\Simple.Data.pdb
+E:\mycode\SimpleDataTest\Simple.Data\obj\Debug\Simple.Data.csprojResolveAssemblyReference.cache
+E:\mycode\SimpleDataTest\Simple.Data\obj\Debug\Simple.Data.dll
+E:\mycode\SimpleDataTest\Simple.Data\obj\Debug\Simple.Data.pdb

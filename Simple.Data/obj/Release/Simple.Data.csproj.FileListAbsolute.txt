@@ -1,0 +1,5 @@
+E:\mycode\SDTest\Simple.Data\bin\Release\Simple.Data.dll.config
+E:\mycode\SDTest\Simple.Data\bin\Release\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data\bin\Release\Simple.Data.pdb
+E:\mycode\SDTest\Simple.Data\obj\Release\Simple.Data.dll
+E:\mycode\SDTest\Simple.Data\obj\Release\Simple.Data.pdb
