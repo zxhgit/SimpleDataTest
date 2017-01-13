@@ -458,6 +458,8 @@ namespace Zx.ApiAdmin.Services
 
         private bool IsLocal(string ip)
         {
+            if ("127.0.0.1".Equals(ip))
+                return true;
             var ipHost = Dns.GetHostAddresses(Dns.GetHostName());            
             return ipHost.Select(add => add.ToString()).Contains(ip);
         }
@@ -680,8 +682,10 @@ namespace Zx.ApiAdmin.Services
                 var co = new ConnectionOptions {Authentication = AuthenticationLevel.PacketPrivacy};
                 if (!IsLocal(machine))
                 {
-                    co.Username = @"highpin\zhaoxu";
-                    co.Password = "zhuopin";
+                    //co.Username = @"highpin\zhaoxu";
+                    //co.Password = "zhuopin";
+                    co.Username = @"corp\zhaoxu";
+                    co.Password = "Asd!@#222";
                 }
                 var ms = new ManagementScope("\\\\" + machine + "\\root\\microsoftiisv2", co);
                 ms.Connect();
@@ -694,8 +698,8 @@ namespace Zx.ApiAdmin.Services
                     while (enumerator.MoveNext())
                     {
                         var mo = (ManagementObject)enumerator.Current;
-                        mo.InvokeMethod("Recycle", null);
-                        //mo.InvokeMethod("Stop", null);
+                        //mo.InvokeMethod("Recycle", null);
+                        mo.InvokeMethod("Stop", null);
                     }
                 }
                 result = true;
