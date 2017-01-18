@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace SimpleDataDemo
+namespace SimpleDataDemoDll
 {
     internal class Program
     {
@@ -19,23 +19,23 @@ namespace SimpleDataDemo
                         var allMethodDemo = new AllMethodSamples();
                         allMethodDemo.RunAll();
                         break;
-                    case "3":
+                    case "3"://FindByXX取top 1
                         var findByMethodDemo = new FindByMethodSamples();
                         findByMethodDemo.RunAll();
                         break;
-                    case "4":
+                    case "4"://FindAllByXX取全部
                         var findAllByMethodDemo = new FindAllByMethodSamples();
                         findAllByMethodDemo.RunAll();
                         break;
-                    case "5":
+                    case "5"://sql中都包含top 1
                         var getMethodDemo = new GetMethodSamples();
                         getMethodDemo.RunAll();
                         break;
-                    case "6":
+                    case "6"://用表达式查询，sql无top 1(控制台输出sql有误，应该有top 1)
                         var findMethodDemo = new FindMethodSamples();
                         findMethodDemo.RunAll();
                         break;
-                    case "7":
+                    case "7"://用表达式查询，sql无top 1
                         var findAllMethodDemo = new FindAllMethodSamples();
                         findAllMethodDemo.RunAll();
                         break;
@@ -73,7 +73,7 @@ namespace SimpleDataDemo
                         pocoDemo.RunAll();
                         break;
                     case "f":
-                    case "F":
+                    case "F"://http://simplefx.org/simpledata/docs/pages/Retrieve/ScalarValues.htm
                         var scalarDemo = new ToScalarSamples();
                         scalarDemo.RunAll();
                         break;
@@ -83,12 +83,12 @@ namespace SimpleDataDemo
                         scalarCollectionDemo.RunAll();
                         break;
                     case "h":
-                    case "H":
+                    case "H"://http://simplefx.org/simpledata/docs/pages/Retrieve/LazyLoadingJoins.htm
                         var naturalJoinDemo = new NaturalJoinSamples();
                         naturalJoinDemo.RunAll();
                         break;
                     case "i":
-                    case "I":
+                    case "I"://http://simplefx.org/simpledata/docs/pages/Retrieve/LazyLoadingJoins.htm
                         var explicitJoinDemo = new ExplicitJoinSamples();
                         explicitJoinDemo.RunAll();
                         break;
@@ -98,7 +98,7 @@ namespace SimpleDataDemo
                         outerJoinDemo.RunAll();
                         break;
                     case "k":
-                    case "K":
+                    case "K"://类似OuterJoinSamples，可参照
                         var leftJoinDemo = new LeftJoinSamples();
                         leftJoinDemo.RunAll();
                         break;
