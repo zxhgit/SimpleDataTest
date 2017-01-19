@@ -44,11 +44,13 @@ namespace SimpleDataDemoDll
             ExampleRunner.RunQuery(
                 "Run All.OrderByGenreId(1).",
                 db => db.Albums.All().OrderByGenreId(1));
+            //order by [dbo].[Albums].[GenreId]
 
             // Runs All.OrderByGenreId()
             ExampleRunner.RunQuery(
                 "Run All.OrderByGenreId(db.Albums.Title).",
                 db => db.Albums.All().OrderByGenreId(db.Albums.Title));
+            //order by [dbo].[Albums].[GenreId]
 
             // Throws Ado.AdoAdapterException 
             ExampleRunner.RunQuery(
@@ -74,6 +76,7 @@ namespace SimpleDataDemoDll
             ExampleRunner.RunQuery(
                 "Run All.OrderBy(db.Albums.ArtistId).OrderBy(db.Albums.Title) - should use ThenBy() for second column.",
                 db => db.Albums.All().OrderBy(db.Albums.ArtistId).OrderBy(db.Albums.Title));
+            //order by [dbo].[Albums].[ArtistId],[dbo].[Albums].[Title] 未抛异常
 
             // Joins and aliases and out params
             // Runs All.OrderBy(Title)
@@ -97,6 +100,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .OrderByTitle(),
                 new List<string> { "Title", "Name" });
+            //order by [dbo].[Albums].[Title]
 
             // Runs All.OrderBy(Name)
             ExampleRunner.RunQuery(
@@ -119,6 +123,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .OrderByName(),
                 new List<string> { "Title", "Name" });
+            //在join中只能把fluid style用在primary table field中★
 
             // Runs All.OrderBy(Name)
             ExampleRunner.RunQuery(

@@ -13,11 +13,29 @@ namespace SimpleDataDemoDll
                     .Select(db.Albums.Artists.Name, db.Albums.AlbumId.Count().As("NumberOfAlbums"))
                     .Having(db.Albums.AlbumId.Count() > 2),
                 new List<string> { "Name", "NumberOfAlbums" });
+            /*
+             select [dbo].[Artists].[Name],Count([dbo].[Albums].[AlbumId]) AS [NumberOfAlbums] 
+            from [dbo].[Albums] LEFT JOIN [dbo].[Artists] 
+            ON ([dbo].[Artists].[ArtistId] = [dbo].[Albums].[ArtistId]) 
+            GROUP BY [dbo].[Artists].[Name] 
+            HAVING Count([dbo].[Albums].[AlbumId]) > 2
+             */
 
             // Should throw NullReferenceException()
             ExampleRunner.RunQuery(
                 "Having() called without base command.",
                 db => db.Albums.Having(db.Albums.Price.Avg() == 8.99));
+            /*
+             select [dbo].[Albums].[AlbumId],[dbo].[Albums].[GenreId],[dbo].[Albums].[ArtistId],
+            [dbo].[Albums].[Title],[dbo].[Albums].[Price],[dbo].[Albums].[AlbumArtUrl] 
+            from [dbo].[Albums] 
+            GROUP BY [dbo].[Albums].[AlbumId],[dbo].[Albums].[GenreId],
+            [dbo].[Albums].[ArtistId],[dbo].[Albums].[Title],
+            [dbo].[Albums].[Price],[dbo].[Albums].[AlbumArtUrl] 
+            HAVING Avg([dbo].[Albums].[Price]) = 8.99
+
+            未抛异常
+             */
 
             // Throws MS.CS.RB.RuntimeBinderException. Should throw ArgumentException
             ExampleRunner.RunQuery(
@@ -42,6 +60,10 @@ namespace SimpleDataDemoDll
                     .Select(db.Albums.Artists.Name, db.Albums.AlbumId.Count().As("NumberOfAlbums"))
                     .Having(db.Albums.GenreId == 1),
                 new List<string> { "Name", "NumberOfAlbums" });
+            /*
+             Simple.Data.Ado.AdoAdapterException
+             HAVING 子句中的列 'dbo.Albums.GenreId' 无效，因为该列没有包含在聚合函数或 GROUP BY 子句中。
+             */
 
             // Throws Simple.Data.UnresolvableObjectException
             ExampleRunner.RunQuery(

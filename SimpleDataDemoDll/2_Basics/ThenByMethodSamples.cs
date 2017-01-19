@@ -9,32 +9,37 @@ namespace SimpleDataDemoDll
             ExampleRunner.RunQuery(
                 "Run ThenBy() without base command or column name.",
                 db => db.Albums.ThenBy());
+            //ThenBy requires an existing OrderBy
 
             // Throws InvalidOperationException
             ExampleRunner.RunQuery(
                 "Run ThenByArtistId() without base command.",
                 db => db.Albums.ThenByArtistId());
+            //ThenBy requires an existing OrderBy
 
             // Throws InvalidOperationException
             ExampleRunner.RunQuery(
                 "Run ThenBy(db.Albums.ArtistId) without base command.",
                 db => db.Albums.ThenBy(db.Albums.ArtistId));
+            //ThenBy requires an existing OrderBy
 
             // Throws InvalidOperationException
             ExampleRunner.RunQuery(
                 "Run All.ThenBy() without orderby.",
                 db => db.Albums.All().ThenBy());
+            //ThenBy requires an existing OrderBy
 
             // Throws InvalidOperationException
             ExampleRunner.RunQuery(
                 "Run All.ThenByArtistId() without orderby.",
                 db => db.Albums.All().ThenByArtistId());
+            //ThenBy requires an existing OrderBy
 
             // Throws NullReferenceException
             ExampleRunner.RunQuery(
                 "Run All.ThenBy(db.Albums.ArtistId) without orderby.",
                 db => db.Albums.All().ThenBy(db.Albums.ArtistId));
-
+            //ThenBy requires an existing OrderBy
 
 
 
@@ -63,6 +68,7 @@ namespace SimpleDataDemoDll
             ExampleRunner.RunQuery(
                 "Run All.OrderBy(AlbumId).ThenByGenreId(1).",
                 db => db.Albums.All().OrderBy(db.Albums.AlbumId).ThenByGenreId(1));
+            //order by [dbo].[Albums].[AlbumId],[dbo].[Albums].[GenreId]
 
             // Runs All.OrderByAlbumId.ThenByGenreId()
             ExampleRunner.RunQuery(
@@ -105,6 +111,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .ThenBy(db.Albums.Title),
                 new List<string> { "Title", "Name" });
+            //order by [dbo].[Albums].[AlbumId],[dbo].[Albums].[Title]
 
             // Runs All.OrderBy(AlbumId).ThenBy(Title)
             ExampleRunner.RunQuery(
@@ -116,6 +123,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .ThenByTitle(),
                 new List<string> { "Title", "Name" });
+            //order by [dbo].[Albums].[AlbumId],[dbo].[Albums].[Title]
 
             // Runs All.OrderBy(AlbumId).ThenBy(Name)
             ExampleRunner.RunQuery(
@@ -127,6 +135,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .ThenBy(db.Genre.Name),
                 new List<string> { "Title", "Name" });
+            //order by [dbo].[Albums].[AlbumId],[dbo].[Genres].[Name]
 
             // Throws UnresolvableObjectException
             ExampleRunner.RunQuery(
@@ -138,6 +147,7 @@ namespace SimpleDataDemoDll
                         .LeftJoin(db.Genre).On(db.Genre.GenreId == db.Albums.GenreId)
                         .ThenByName(),
                 new List<string> { "Title", "Name" });
+            //在join中只能把fluid style用在primary table field中
 
             // Runs All.OrderBy(AlbumId).ThenBy(Name)
             ExampleRunner.RunQuery(

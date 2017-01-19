@@ -121,7 +121,7 @@ namespace SimpleDataDemoDll
                     case "O":
                         var orderByDemo = new OrderByMethodSamples();
                         orderByDemo.RunAll();
-                        var orderByDescDemo = new OrderByDescendingMethodSamples();
+                        var orderByDescDemo = new OrderByDescendingMethodSamples();//类似OrderByMethodSamples
                         orderByDescDemo.RunAll();
                         break;
                     case "p":
